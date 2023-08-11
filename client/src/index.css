@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+  padding-top: 0;
+  background-color: #f08080;
+  backdrop-filter: blur(20px);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#card_image {
+  border-radius: inherit;
+  transition: transform 250ms;
+}
+#card:hover #card_image {
+  transform: translateY(-122px) scale(0.75);
+}
+/* #card_body {
+  z-index: 1;
+} */
+.foot {
+  background-color: #222;
+  color: #fff;
+  font-size: 25px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
